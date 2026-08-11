@@ -5,304 +5,216 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <title>Aymane Mirouah | Développeur Informatique — Marrakech</title>
+  <title>Aymane Mirouah | Développeur</title>
   <meta name="description" content="Portfolio d'Aymane Mirouah, étudiant en développement informatique basé à Marrakech.">
-  <meta name="keywords" content="Aymane Mirouah, développeur, Java, Python, Django, Marrakech, portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="index.css" />
-
-  <style>
-    .lang-toggle {
-      position: fixed;
-      top: 1.2rem;
-      right: 1.5rem;
-      z-index: 999;
-      background: #f0f0f0;
-      border: 1.5px solid #ccc;
-      border-radius: 20px;
-      padding: 0.3rem 0.9rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      letter-spacing: 0.05em;
-      transition: background 0.2s, color 0.2s;
-      color: #333;
-    }
-    .lang-toggle:hover {
-      background: #e05252;
-      color: #fff;
-      border-color: #e05252;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <button class="lang-toggle" id="langBtn" onclick="toggleLang()">EN</button>
-
-  <!-- ***** Header ***** -->
-  <header class="header" role="banner" id="top">
+  <!-- NAV -->
+  <header class="header" id="top">
     <div class="row">
-      <nav class="nav" role="navigation">
+      <nav class="nav">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="#work" class="nav__link" data-fr="Projets" data-en="Work">Projets</a>
+            <a href="#about" class="nav__link" data-fr="À propos" data-en="About">À propos</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link" data-fr="À propos" data-en="About">À propos</a>
+            <a href="#work" class="nav__link" data-fr="Projets" data-en="Projects">Projets</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link" data-fr="Contact" data-en="Contact">Contact</a>
           </li>
         </ul>
+        <button class="lang-btn" id="langBtn" onclick="toggleLang()"></button>
       </nav>
     </div>
+
+    <!-- HERO -->
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
           <span>Aymane Mirouah</span>
         </h1>
         <p data-fr="Étudiant en développement informatique — je résous des problèmes, je débogue, et je construis des choses qui fonctionnent."
-          data-en="Computer science student — I solve problems, debug, and build things that work.">
+           data-en="Computer science student — I solve problems, debug, and build things that work.">
           Étudiant en développement informatique — je résous des problèmes, je débogue, et je construis des choses qui fonctionnent.
         </p>
-        <a href="#contact" class="btn btn--pink" data-fr="Me contacter" data-en="Get in touch">Me contacter</a>
+        <a href="#contact" class="btn btn--accent" data-fr="Me contacter" data-en="Get in touch">Me contacter</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main>
 
-    <!-- ***** Work ***** -->
-    <section class="work" id="work">
+    <!-- ABOUT -->
+    <section class="about" id="about">
       <div class="row">
-        <h2 data-fr="Mes Projets" data-en="My Work">Mes Projets</h2>
-        <div class="work__boxes">
-
-          <!-- Old Kech -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Old Kech</h3>
-              <p data-fr="Plateforme e-commerce pour montres vintage et antiquités ciblant les acheteurs marocains."
-                 data-en="E-commerce platform for vintage watches and antiques targeting Moroccan buyers.">
-                Plateforme e-commerce pour montres vintage et antiquités ciblant les acheteurs marocains.
-              </p>
-              <ul class="work__list">
-                <li>Django</li>
-                <li>MySQL</li>
-                <li>Tailwind CSS</li>
-                <li>Python</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Aymane-Mirouah/Django_ecommerce_project" target="_blank" class="link__text">
-                  <span data-fr="Voir le code" data-en="View Code">Voir le code</span> <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Aymane-Mirouah/Django_ecommerce_project" title="GitHub" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/old-kech.png" class="work__image" alt="Old Kech" />
-            </div>
+        <h2 data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p data-fr="Étudiant en développement informatique passionné par le code, la résolution de problèmes et les nouvelles technologies. Rigoureux et polyvalent, avec une expérience pratique en gestion de données et projets web — j'aime construire des choses qui ont du sens et qui fonctionnent vraiment."
+               data-en="Computer science student passionate about code, problem-solving, and building things that actually work. Rigorous and versatile, with hands-on experience in data management and web projects.">
+              Étudiant en développement informatique passionné par le code, la résolution de problèmes et les nouvelles technologies. Rigoureux et polyvalent, avec une expérience pratique en gestion de données et projets web — j'aime construire des choses qui ont du sens et qui fonctionnent vraiment.
+            </p>
+            <a href="./Aymane_Mirouah_CV.pdf" target="_blank" class="btn" data-fr="Mon CV" data-en="My Resume">Mon CV</a>
           </div>
-
-          <!-- Survival Manual -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Survival Manual: <span data-fr="Traduction Arabe" data-en="Arabic Translation">Traduction Arabe</span></h3>
-              <p data-fr="Localisation complète en arabe d'une application Android d'urgence 100% hors-ligne, avec pipeline CI/CD automatisé via GitHub Actions."
-                 data-en="Full Arabic localization of an offline-first Android emergency app, with automated CI/CD pipeline via GitHub Actions.">
-                Localisation complète en arabe d'une application Android d'urgence 100% hors-ligne, avec pipeline CI/CD automatisé via GitHub Actions.
-              </p>
-              <ul class="work__list">
-                <li>Android</li>
-                <li>GitHub Actions</li>
-                <li>CI/CD</li>
-                <li>Git</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Aymane-Mirouah/SurvivalManual" target="_blank" class="link__text">
-                  <span data-fr="Voir le code" data-en="View Code">Voir le code</span> <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Aymane-Mirouah/SurvivalManual" title="GitHub" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/survival-manual.png" class="work__image" alt="Survival Manual" />
-            </div>
+          <div class="about__skills">
+            <div class="skill"><i class="devicon-c-plain colored"></i><span>C</span></div>
+            <div class="skill"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+            <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="skill"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+            <div class="skill"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="skill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="skill"><i class="devicon-linux-plain" style="color:#f8f7f6;"></i><span>Linux</span></div>
+            <div class="skill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+            <div class="skill"><i class="devicon-intellij-plain colored"></i><span>IntelliJ</span></div>
           </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>SurvivalRAZR Trilogy</h3>
-              <p data-fr="Trois applications J2ME publiées pour téléphone Motorola RAZR V3 — fonctionnant sur MIDP 2.0 / CLDC. Projet rétro open-source."
-                data-en="Three J2ME apps published for the Motorola RAZR V3 — running on MIDP 2.0 / CLDC. Retro open-source project.">
-                Trois applications J2ME publiées pour téléphone Motorola RAZR V3 — fonctionnant sur MIDP 2.0 / CLDC. Projet rétro open-source.
-              </p>
-              <ul class="work__list">
-                <li>Java</li>
-                <li>J2ME</li>
-                <li>MIDP 2.0</li>
-                <li>CLDC</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Aymane-Mirouah/SurvivalRAZR" target="_blank" class="link__text">
-                  <span data-fr="Repo 1" data-en="Repo 1">Repo 1</span> <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Aymane-Mirouah/SurvivalRAZR" title="GitHub" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-              <div class="work__links" style="margin-top: 0.5rem;">
-                <a href="https://github.com/Aymane-Mirouah/first-aid-app-on-Motorola-RAZR-V3" target="_blank" class="link__text">
-                  <span data-fr="Repo 2" data-en="Repo 2">Repo 2</span> <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Aymane-Mirouah/first-aid-app-on-Motorola-RAZR-V3" title="GitHub" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/github.svg" class="work__image" alt="SurvivalRAZR Trilogy" style="padding: 6rem; background: #1a1a2e; width: 65%;" />
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-      <!-- ***** About ***** -->
-      <section class="about" id="about">
-        <div class="row">
-          <h2 data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
-          <div class="about__content">
-            <div class="about__text">
-              <p data-fr="Étudiant en développement informatique passionné par le code, la résolution de problèmes et les nouvelles technologies. Rigoureux et polyvalent, avec une expérience pratique en gestion de données et projets web — j'aime construire des choses qui ont du sens et qui fonctionnent vraiment. Basé à Marrakech, je cherche à intégrer le secteur informatique pour y développer mon expertise technique."
-                data-en="Computer science student passionate about code, problem-solving, and building things that actually work. Rigorous and versatile, with hands-on experience in data management and web projects. Based in Marrakech, I'm looking to grow my technical skills in the field and take on new challenges.">
-                Étudiant en développement informatique passionné par le code, la résolution de problèmes et les nouvelles technologies. Rigoureux et polyvalent, avec une expérience pratique en gestion de données et projets web — j'aime construire des choses qui ont du sens et qui fonctionnent vraiment. Basé à Marrakech, je cherche à intégrer le secteur informatique pour y développer mon expertise technique.
-              </p>
-              <a href="./Aymane_Mirouah_CV.pdf" target="_blank" class="btn" data-fr="Mon CV" data-en="My Resume">Mon CV</a>
-            </div>
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2 data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
 
-            <div class="about__photo-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; justify-items: center; align-items: center;">
-              <div style="text-align: center;">
-                <i class="devicon-c-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">C</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-java-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">Java</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-csharp-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">C#</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-python-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">Python</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-javascript-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">JavaScript</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-django-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">Django</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-mysql-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">MySQL</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-git-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">Git</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-linux-plain" style="font-size: 4rem; color: #f0c030;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">Linux</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-vscode-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">VS Code</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-intellij-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">IntelliJ</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-html5-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">HTML</p>
-              </div>
-              <div style="text-align: center;">
-                <i class="devicon-css3-plain colored" style="font-size: 4rem;"></i>
-                <p style="margin: 0.3rem 0 0; font-size: 0.75rem;">CSS</p>
-              </div>
+        <!-- Old Kech -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Old Kech</h3>
+            <p data-fr="Plateforme e-commerce pour montres vintage et antiquités ciblant les acheteurs marocains."
+               data-en="E-commerce platform for vintage watches and antiques targeting Moroccan buyers.">
+              Plateforme e-commerce pour montres vintage et antiquités ciblant les acheteurs marocains.
+            </p>
+            <ul class="work__list">
+              <li>Django</li><li>MySQL</li><li>Tailwind CSS</li><li>Python</li>
+            </ul>
+            <div class="work__links">
+              <a href="https://github.com/Aymane-Mirouah/Django_ecommerce_project" target="_blank" class="link__text">
+                <span data-fr="Voir le code" data-en="View Code">Voir le code</span> <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Aymane-Mirouah/Django_ecommerce_project" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/old-kech.png" class="work__image" alt="Old Kech" />
+          </div>
+        </div>
+
+        <!-- Survival Manual -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Survival Manual</h3>
+            <p data-fr="Localisation complète en arabe d'une application Android d'urgence 100% hors-ligne, avec pipeline CI/CD automatisé via GitHub Actions."
+               data-en="Full Arabic localization of an offline-first Android emergency app, with automated CI/CD pipeline via GitHub Actions.">
+              Localisation complète en arabe d'une application Android d'urgence 100% hors-ligne, avec pipeline CI/CD automatisé via GitHub Actions.
+            </p>
+            <ul class="work__list">
+              <li>Android</li><li>GitHub Actions</li><li>CI/CD</li><li>Git</li>
+            </ul>
+            <div class="work__links">
+              <a href="https://github.com/Aymane-Mirouah/SurvivalManual" target="_blank" class="link__text">
+                <span data-fr="Voir le code" data-en="View Code">Voir le code</span> <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Aymane-Mirouah/SurvivalManual" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/survival-manual.png" class="work__image" alt="Survival Manual" />
+          </div>
+        </div>
+
+        <!-- SurvivalRAZR -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>SurvivalRAZR Trilogy</h3>
+            <p data-fr="Trois applications J2ME publiées pour le Motorola RAZR V3 — développement rétro sur MIDP 2.0 / CLDC."
+               data-en="Three J2ME apps published for the Motorola RAZR V3 — retro development on MIDP 2.0 / CLDC.">
+              Trois applications J2ME publiées pour le Motorola RAZR V3 — développement rétro sur MIDP 2.0 / CLDC.
+            </p>
+            <ul class="work__list">
+              <li>Java</li><li>J2ME</li><li>MIDP 2.0</li><li>CLDC</li>
+            </ul>
+            <div class="work__links">
+              <a href="https://github.com/Aymane-Mirouah/SurvivalRAZR" target="_blank" class="link__text">
+                Repo 1 <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Aymane-Mirouah/SurvivalRAZR" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+            <div class="work__links" style="margin-top: 1rem;">
+              <a href="https://github.com/Aymane-Mirouah/first-aid-app-on-Motorola-RAZR-V3" target="_blank" class="link__text">
+                Repo 2 <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Aymane-Mirouah/first-aid-app-on-Motorola-RAZR-V3" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="work__image-box">
+            <div class="work__placeholder">
+              <i class="devicon-java-plain" style="font-size: 6rem; color: #c8773a;"></i>
             </div>
           </div>
         </div>
-      </section>
+
+      </div>
+    </section>
 
   </main>
 
-  <!-- ***** Contact ***** -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="row">
       <h2 data-fr="Me contacter" data-en="Get in Touch">Me contacter</h2>
       <div class="contact__info">
-        <p data-fr="Une question, une opportunité de stage, ou juste envie de dire bonjour ? Mon inbox est ouvert. Le moyen le plus rapide de me joindre c'est par email."
-           data-en="A question, an internship opportunity, or just want to say hi? My inbox is open. The fastest way to reach me is by email.">
-          Une question, une opportunité de stage, ou juste envie de dire bonjour ? Mon inbox est ouvert. Le moyen le plus rapide de me joindre c'est par email.
+        <p data-fr="Une question, une opportunité de stage, ou juste envie de dire bonjour ? Mon inbox est ouvert."
+           data-en="A question, an internship opportunity, or just want to say hi? My inbox is open.">
+          Une question, une opportunité de stage, ou juste envie de dire bonjour ? Mon inbox est ouvert.
         </p>
         <a href="mailto:aymanemirouah3@gmail.com" class="btn">aymanemirouah3@gmail.com</a>
       </div>
     </div>
   </section>
 
-  <!-- ***** Footer ***** -->
-  <footer role="contentinfo" class="footer">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="row">
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://github.com/Aymane-Mirouah" title="GitHub" target="_blank">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          <a href="https://github.com/Aymane-Mirouah" target="_blank">
+            <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/aymane-mirouah" title="LinkedIn" target="_blank">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/aymane-mirouah" target="_blank">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
           </a>
         </li>
       </ul>
-      <p>
-        &copy; 2026 Aymane Mirouah &mdash;
-      </p>
+      <p>&copy; 2026 Aymane Mirouah</p>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
 
-  <script src="./index.js"></script>
-
-  <script>
-    let currentLang = 'fr';
-
-    function toggleLang() {
-      currentLang = currentLang === 'fr' ? 'en' : 'fr';
-      const btn = document.getElementById('langBtn');
-      btn.textContent = currentLang === 'fr' ? 'EN' : 'FR';
-      document.documentElement.lang = currentLang;
-
-      document.querySelectorAll('[data-fr][data-en]').forEach(el => {
-        el.textContent = el.getAttribute('data-' + currentLang);
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

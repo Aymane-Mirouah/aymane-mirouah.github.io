@@ -1,6 +1,6 @@
 # Aymane Mirouah — Portfolio
 
-Personal portfolio website built with HTML, CSS and JavaScript.
+A simple personal portfolio website built with HTML, CSS and JavaScript.
 
 🌐 [aymane-mirouah.github.io](https://aymane-mirouah.github.io)
 
